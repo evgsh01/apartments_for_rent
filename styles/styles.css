@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -31,5 +33,61 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 32px;
+    font-family: "Roboto";
+    color: rgb(42, 42, 42);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
 }
+
+/* index */
+
+.reviews {
+    margin: 55px 0 30px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.review {
+    width: 468px;
+    height: 136px;
+    background-color: #f4efed;
+    padding: 40px 60px 40px 40px;
+}
+
+.review_author {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.review_author_awatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review_text, .review_author_name, .review_date {
+    font-size: 16px;
+    color: rgb(42, 42, 42);
+    line-height: 1.375;
+    text-align: left;
+}
+
+.review_text {
+    width: 458px;
+    height: 59px;
+}
+  
+.review_author_name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review_date {
+    font-size: 14px;
+    line-height: 1.429;
+}
+  
+  
