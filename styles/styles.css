@@ -30,6 +30,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2rem;
+    display: none;
 }
 
 h2 {
@@ -43,7 +44,26 @@ h2 {
 
 /* index */
 
-.reviews {
+/* header */
+
+.header {
+    background-color: #2a2a2a;
+}
+
+.header__wrapper-logo {
+    width: 35px;
+    height: 38px;
+    display: block;
+    color: white;
+    background-image: url(/images/icons/logo.svg);
+}
+
+.header__wrapper-logo:hover {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.reviews__wrapper {
     margin: 55px 0 30px 0;
     display: flex;
     gap: 30px;
@@ -56,36 +76,36 @@ h2 {
     padding: 40px 60px 40px 40px;
 }
 
-.review_author {
+.review__author {
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
 
-.review_author_awatar {
+.review__author-awatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.review_text, .review_author_name, .review_date {
+.review-text, .review__author__data-name, .review__author__data-date {
     font-size: 16px;
     color: rgb(42, 42, 42);
     line-height: 1.375;
     text-align: left;
 }
 
-.review_text {
+.review-text {
     width: 458px;
     height: 59px;
 }
   
-.review_author_name {
+.review__author__data-name {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.review_date {
+.review__author__data-date {
     font-size: 14px;
     line-height: 1.429;
 }
