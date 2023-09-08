@@ -110,4 +110,44 @@ h2 {
     line-height: 1.429;
 }
   
-  
+
+/* footer */
+
+.footer {
+    background-color: #1b1b1c;
+    height: 265px;
+}
+
+.footer .contacts a {
+    display: block;
+    color: white;
+}
+
+.footer .contacts a:hover {
+    opacity: 0.4;
+}
+
+.contacts-email {
+    width: 16px;
+    height: 13px;    
+    background-image: url(../images/icons/icon-mail.svg);
+}
+
+.contacts-vk {
+    width: 22px;
+    height: 12px;
+    background-image: url(../images/icons/vk.png);
+    
+}
+
+.contacts-fb {
+    background-image: url(../images/icons/fb.png);
+    width: 14px;
+    height: 14px;
+}
+
+.contacts-insta {
+    background-image: url(../images/icons/insta.png);
+    width: 14px;
+    height: 14px;
+}
