@@ -118,9 +118,8 @@ h2 {
     height: 265px;
 }
 
-.footer .contacts a {
+.footer .contacts li a {
     display: block;
-    color: white;
 }
 
 .footer .contacts a:hover {
@@ -136,18 +135,18 @@ h2 {
 .contacts-vk {
     width: 22px;
     height: 12px;
-    background-image: url(../images/icons/vk.png);
+    background-image: url(../images/icons/icon-vk.png);
     
 }
 
 .contacts-fb {
-    background-image: url(../images/icons/fb.png);
+    background-image: url(../images/icons/icon-fb.png);
     width: 14px;
     height: 14px;
 }
 
 .contacts-insta {
-    background-image: url(../images/icons/insta.png);
+    background-image: url(../images/icons/icon-insta.png);
     width: 14px;
     height: 14px;
 }
