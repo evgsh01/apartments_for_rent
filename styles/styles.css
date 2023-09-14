@@ -16,7 +16,7 @@ html {
 }
 
 
-.header__wrapper, .footer__wrapper {
+.header__wrapper, .footer__wrapper, .our_apartments__wrapper, .reviews__wrapper {
     width: 1150px;
     margin: 0 auto;
 }
@@ -84,11 +84,7 @@ html {
     align-items: center;
 }
 
-
-
-
-
-
+/* заголовки */
   
 h1 {
     display: none;
@@ -99,25 +95,104 @@ h2 {
     font-family: "Roboto";
     color: rgb(42, 42, 42);
     font-weight: bold;
-    text-align: center;
+    padding-top: 50px;
+}
+
+/* apartments  */
+
+.our_apartments {
+    background-color: #f5f5f5;
+}
+
+.our_apartments__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apartments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 29px;
     margin-top: 50px;
 }
 
+.apartment {
+    width: 364px;
+    background-color: #ffffff;
+}
 
+.apartment:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
+.apartment-foto {
+    width: 364px;
+}
 
-/* index */
+.apartment-room, .apartment-adress {
+    font-size: 18px;
+    color: rgb(42, 42, 42);
+    font-weight: bold;
+}
 
+.guests, .sleeper {
+    font-size: 14px;
+    color: rgb(42, 42, 42);
+}
+
+.guests::before {
+    content: url(../images/icons/icon-guests.svg);
+    height: 12px;
+    margin-right: 10px;
+}
+
+.sleeper::before {
+    content: url(../images/icons/icon-beds.svg);
+    height: 12px;
+    margin-right: 10px;
+}
+
+.apartment-data-places {
+    display: flex;
+    gap: 11px;
+    margin-top: 18px;
+}
+
+.apartment-data {
+    margin: 30px 0 40px 40px
+}
+
+.our_apartments__wrapper .button {
+    color: rgb(42, 42, 42);
+    background-color: #f5f5f5;
+    border-color: #383838;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.our_apartments__wrapper .button:hover {
+    color: #f5f5f5;
+    background-color: #383838;
+}
+
+/* reviews */
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .reviews__wrapper {
-    margin: 55px 0 30px 0;
+    margin-top: 55px;
+    margin-bottom: 30px;
     display: flex;
     gap: 30px;
 }
 
 .review {
-    /* width: 468px;
-    height: 136px; */
     background-color: #f4efed;
     padding: 40px 60px 40px 40px;
 }
@@ -125,7 +200,7 @@ h2 {
 .review__author {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .review__author-awatar {
@@ -143,19 +218,45 @@ h2 {
 
 .review-text {
     width: 458px;
-    /* height: 59px; */
 }
   
 .review__author__data-name {
     font-weight: bold;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .review__author__data-date {
     font-size: 14px;
-    line-height: 1.429;
+}
+
+.pagination div {
+    border-radius: 50%;
+    background-color: #c6c6c6;
+    width: 9px;
+    height: 9px;
+}
+
+.pagination div:first-child {
+    background-color: rgb(27, 27, 28);
+}
+
+.pagination {
+    display: flex;
+    gap: 16px;
 }
   
+.reviews .button {
+    color: rgb(42, 42, 42);
+    background-color: #ffffff;
+    border-color: #2a2a2a;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.reviews .button:hover {
+    color: #ffffff;
+    background-color: rgb(42, 42, 42);
+}
 
 /* footer */
 
@@ -256,5 +357,3 @@ h2 {
     text-decoration: none;
     cursor: pointer;
 }
-
-  
