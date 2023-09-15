@@ -16,7 +16,7 @@ html {
 }
 
 
-.header__wrapper, .footer__wrapper, .our_apartments__wrapper, .reviews__wrapper {
+.header__wrapper, .footer__wrapper, .our_apartments__wrapper, .reviews__wrapper, .about_company__wrapper {
     width: 1150px;
     margin: 0 auto;
 }
@@ -96,6 +96,7 @@ h2 {
     color: rgb(42, 42, 42);
     font-weight: bold;
     padding-top: 50px;
+    text-align: center;
 }
 
 /* apartments  */
@@ -356,4 +357,47 @@ h2 {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
     cursor: pointer;
+}
+
+
+
+/* ABOUT COMPANY */
+
+/* aboyt */
+
+.about_company__wrapper h2 {
+    padding-bottom: 40px;
+}
+
+.about_company-text {
+    font-size: 18px;
+    color: rgb(42, 42, 42);
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    border-left: 2px solid #2a2a2a;
+}
+
+.about_company-text:last-child {
+    padding-top: 30px;
+    margin-bottom: 80px;
+}  
+
+
+/* about__contacts */
+
+.about__contacts {
+    background-color: #f5f5f5;
+}
+
+.about__contacts h2 {
+    padding-bottom: 55px;
+}
+
+.about__contacts__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
 }
